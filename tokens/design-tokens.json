@@ -1,0 +1,36 @@
+{
+  "color": [
+    {"name":"brand/cedar-900","value":"#073630","usage":"Primary hover / strong brand"},
+    {"name":"brand/cedar-700","value":"#0B4A43","usage":"Primary action / navigation / brand"},
+    {"name":"brand/cedar-600","value":"#17645B","usage":"Supporting brand accent"},
+    {"name":"brand/cedar-100","value":"#DCEBE7","usage":"Selected / soft brand surface"},
+    {"name":"text/primary","value":"#12212C","usage":"Primary text"},
+    {"name":"text/secondary","value":"#586974","usage":"Secondary text"},
+    {"name":"surface/subtle","value":"#F5F8F7","usage":"Subtle backgrounds"},
+    {"name":"surface/warm","value":"#F7F3E8","usage":"Informational / reassuring surface"},
+    {"name":"status/success","value":"#17633F","usage":"Success text / icon"},
+    {"name":"status/warning","value":"#8A5C11","usage":"Warning text / icon"},
+    {"name":"status/danger","value":"#9B1C1C","usage":"Error / destructive"},
+    {"name":"focus/ring","value":"#FFD166","usage":"Keyboard focus indicator"}
+  ],
+  "spacing": [
+    {"name":"space-1","value":4},
+    {"name":"space-2","value":8},
+    {"name":"space-3","value":12},
+    {"name":"space-4","value":16},
+    {"name":"space-6","value":24},
+    {"name":"space-8","value":32},
+    {"name":"space-12","value":48}
+  ],
+  "radius": {
+    "small":8,
+    "medium":16,
+    "large":24,
+    "pill":999
+  },
+  "breakpoints": {
+    "compact":640,
+    "medium":960,
+    "wide":1200
+  }
+}

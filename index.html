@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cedarline Mutual fictional web design system UX portfolio case study">
+  <meta name="theme-color" content="#0B4A43">
+  <title>Cedarline Web Design System</title>
+  <link rel="icon" href="assets/cedarline-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to design-system content</a>
+
+<header class="topbar">
+  <a class="brand" href="#overview" aria-label="Cedarline Design System overview">
+    <img src="assets/cedarline-mark.svg" alt="" width="40" height="40">
+    <span><strong>Cedarline</strong><small>Web Design System</small></span>
+  </a>
+  <div class="topbar-actions">
+    <span class="version">v1.0 portfolio system</span>
+    <a class="repo-link" href="https://github.com/joshuaokent-spec/Cedarline-Web-Design-System">View source</a>
+  </div>
+</header>
+
+<div class="page-shell">
+  <nav class="side-nav" aria-label="Design system sections">
+    <p class="nav-kicker">Foundations</p>
+    <a href="#overview">Overview</a>
+    <a href="#color">Color</a>
+    <a href="#type">Typography</a>
+    <a href="#spacing">Spacing & shape</a>
+
+    <p class="nav-kicker">Components</p>
+    <a href="#buttons">Buttons</a>
+    <a href="#forms">Forms</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#cards">Cards</a>
+    <a href="#tables">Tables</a>
+    <a href="#dialog">Dialog</a>
+
+    <p class="nav-kicker">Standards</p>
+    <a href="#accessibility">Accessibility</a>
+    <a href="#content">Content</a>
+    <a href="#responsive">Responsive</a>
+    <a href="#governance">Governance</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero system-section" id="overview">
+      <p class="eyebrow">Cedarline Web Design System</p>
+      <h1>One shared language for calm, trustworthy insurance experiences.</h1>
+      <p class="lead">A reusable set of visual, interaction, accessibility, and content standards designed to keep Cedarline customer and employee experiences consistent without making every interface look identical.</p>
+
+      <div class="principles-grid">
+        <article><span>01</span><h2>Calm under pressure</h2><p>Insurance interactions often happen during stressful moments. Components should reduce uncertainty, not amplify it.</p></article>
+        <article><span>02</span><h2>Plain language first</h2><p>Formal insurance terms remain available, but the interface should help people reach them without already knowing the vocabulary.</p></article>
+        <article><span>03</span><h2>Accessible by default</h2><p>Focus, contrast, semantics, error recovery, motion, touch targets, and reflow are baseline requirements.</p></article>
+        <article><span>04</span><h2>System, not sameness</h2><p>Shared tokens and components create consistency while still allowing consumer and enterprise products to use different densities.</p></article>
+      </div>
+    </section>
+
+    <section class="system-section" id="color">
+      <div class="section-heading">
+        <p class="eyebrow">Foundation</p>
+        <h2>Color</h2>
+        <p>Brand colors establish recognition; semantic colors communicate state. Components reference semantic tokens rather than hard-coded color names.</p>
+      </div>
+      <div id="colorTokens" class="token-grid" aria-live="polite"></div>
+
+      <div class="guidance-grid">
+        <article class="do"><strong>Use</strong><p>Cedar green for primary actions, navigation emphasis, and brand recognition.</p></article>
+        <article class="dont"><strong>Avoid</strong><p>Using color alone to communicate priority, errors, selection, or success.</p></article>
+      </div>
+    </section>
+
+    <section class="system-section" id="type">
+      <div class="section-heading">
+        <p class="eyebrow">Foundation</p>
+        <h2>Typography</h2>
+        <p>A system-ui stack keeps the prototype fast and portable. Scale, weight, spacing, and hierarchy matter more than relying on a proprietary font.</p>
+      </div>
+
+      <div class="type-specimens">
+        <div><span>Display / 56</span><p class="type-display">Start now. Add details later.</p></div>
+        <div><span>Heading 1 / 40</span><p class="type-h1">Claims that need attention</p></div>
+        <div><span>Heading 2 / 30</span><p class="type-h2">Understand what your policy protects</p></div>
+        <div><span>Body / 16</span><p class="type-body">Use plain language, short paragraphs, descriptive labels, and content that tells people what they can do next.</p></div>
+        <div><span>Helper / 14</span><p class="type-helper">Optional information can be added later.</p></div>
+      </div>
+    </section>
+
+    <section class="system-section" id="spacing">
+      <div class="section-heading">
+        <p class="eyebrow">Foundation</p>
+        <h2>Spacing, radius & elevation</h2>
+        <p>An 8-pixel-derived rhythm creates predictable relationships without requiring every layout to use the same density.</p>
+      </div>
+      <div id="spacingTokens" class="spacing-grid"></div>
+      <div class="shape-demo">
+        <div class="radius-card">Radius / medium<br><strong>16px</strong></div>
+        <div class="radius-card large">Radius / large<br><strong>24px</strong></div>
+        <div class="elevation-card">Elevation / raised<br><strong>Use sparingly</strong></div>
+      </div>
+    </section>
+
+    <section class="system-section" id="buttons">
+      <div class="section-heading">
+        <p class="eyebrow">Component</p>
+        <h2>Buttons</h2>
+        <p>Use one clear primary action per decision point. Secondary and tertiary actions should support—not compete with—the primary path.</p>
+      </div>
+
+      <div class="component-stage">
+        <div class="button-row">
+          <button class="cds-button primary" type="button">Primary action</button>
+          <button class="cds-button secondary" type="button">Secondary</button>
+          <button class="cds-button tertiary" type="button">Tertiary action</button>
+          <button class="cds-button destructive" type="button">Destructive</button>
+          <button class="cds-button primary" type="button" disabled>Disabled</button>
+        </div>
+      </div>
+
+      <div class="guidance-grid">
+        <article class="do"><strong>Do</strong><p>Use labels that describe the outcome: “Submit claim report” or “Save progress.”</p></article>
+        <article class="dont"><strong>Don’t</strong><p>Use vague labels such as “Yes,” “OK,” or “Continue” when the action has a specific consequence.</p></article>
+      </div>
+    </section>
+
+    <section class="system-section" id="forms">
+      <div class="section-heading">
+        <p class="eyebrow">Component</p>
+        <h2>Forms & validation</h2>
+        <p>Persistent labels, visible help, native controls, and text-based errors make form behavior understandable before and after something goes wrong.</p>
+      </div>
+
+      <div class="component-stage form-demo">
+        <div class="field">
+          <label for="demoName">Policyholder name</label>
+          <input id="demoName" type="text" value="Maya Carter">
+          <p class="help-text">Use the name shown on the policy.</p>
+        </div>
+
+        <div class="field">
+          <label for="demoDate">Date of loss</label>
+          <input id="demoDate" type="date" aria-describedby="demoDateError" aria-invalid="true">
+          <p class="error-text" id="demoDateError">Enter the date of the loss.</p>
+        </div>
+
+        <div class="field">
+          <label for="demoSelect">Preferred contact</label>
+          <select id="demoSelect"><option>Text message</option><option>Phone call</option><option>Email</option></select>
+        </div>
+
+        <fieldset class="choice-field">
+          <legend>Can the vehicle be driven safely?</legend>
+          <label><input type="radio" name="safe-demo"> Yes</label>
+          <label><input type="radio" name="safe-demo"> No</label>
+          <label><input type="radio" name="safe-demo"> Unsure</label>
+        </fieldset>
+
+        <label class="check-row"><input type="checkbox"> I’ll add documents later</label>
+      </div>
+    </section>
+
+    <section class="system-section" id="feedback">
+      <div class="section-heading">
+        <p class="eyebrow">Component</p>
+        <h2>Alerts & status</h2>
+        <p>Feedback components pair iconography, headings, and text with color so meaning is never color-dependent.</p>
+      </div>
+
+      <div class="alert-stack">
+        <div class="alert info" role="status"><strong>Information</strong><span>Your progress is saved on this device.</span></div>
+        <div class="alert success" role="status"><strong>Success</strong><span>Your claim report was received.</span></div>
+        <div class="alert warning"><strong>Attention</strong><span>Two documents are still missing from this claim.</span></div>
+        <div class="alert error" role="alert"><strong>Error</strong><span>Enter an address, intersection, or general location.</span></div>
+      </div>
+    </section>
+
+    <section class="system-section" id="cards">
+      <div class="section-heading">
+        <p class="eyebrow">Component</p>
+        <h2>Cards</h2>
+        <p>Cards group related information. They should not be used simply to put every piece of content inside a box.</p>
+      </div>
+
+      <div class="cards-demo">
+        <article class="policy-card">
+          <p class="card-kicker">Personal Auto</p>
+          <h3>2023 Honda CR-V</h3>
+          <p>Policy ending 4821</p>
+          <a href="#">View policy</a>
+        </article>
+
+        <article class="work-card">
+          <div><p class="card-kicker">Next action</p><h3>Review field notes</h3></div>
+          <span class="badge overdue">Overdue</span>
+          <p>Claim CLM-2600187 · Maya Carter</p>
+        </article>
+
+        <article class="education-card">
+          <p class="card-kicker">Coverage guide</p>
+          <h3>If you cannot stay in your home</h3>
+          <p>Understand additional living expense coverage and when it may apply.</p>
+          <a href="#">Read coverage details</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="system-section" id="tables">
+      <div class="section-heading">
+        <p class="eyebrow">Component</p>
+        <h2>Data tables</h2>
+        <p>Tables are appropriate for dense expert workflows when stable columns improve comparison. At narrow widths, preserve readability rather than shrinking text.</p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" aria-label="Example claims table, horizontally scrollable">
+        <table class="demo-table">
+          <thead><tr><th>Claim</th><th>Stage</th><th>Next action</th><th>Due</th><th>Signal</th></tr></thead>
+          <tbody>
+            <tr><td><strong>CLM-2600187</strong><span>Maya Carter</span></td><td>Inspection</td><td>Review field notes</td><td>Sep 20<br><strong class="danger-text">Overdue</strong></td><td><span class="badge overdue">Overdue action</span></td></tr>
+            <tr><td><strong>CLM-2600214</strong><span>Daniel Brooks</span></td><td>Coverage review</td><td>Request supporting document</td><td>Sep 23</td><td><span class="badge neutral">Missing docs</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="system-section" id="dialog">
+      <div class="section-heading">
+        <p class="eyebrow">Component</p>
+        <h2>Dialog</h2>
+        <p>Dialogs interrupt the current task, so reserve them for decisions that genuinely require focused attention.</p>
+      </div>
+
+      <div class="component-stage">
+        <button class="cds-button primary" id="openDialog" type="button">Open confirmation dialog</button>
+      </div>
+    </section>
+
+    <section class="system-section" id="accessibility">
+      <div class="section-heading">
+        <p class="eyebrow">Standard</p>
+        <h2>Accessibility</h2>
+        <p>Accessibility requirements belong in component definitions—not in a cleanup checklist after visual design is finished.</p>
+      </div>
+
+      <div class="standards-list">
+        <article><strong>Keyboard</strong><p>Every interactive component must work without a pointer and expose visible focus.</p></article>
+        <article><strong>Semantics</strong><p>Prefer native HTML controls and preserve meaningful headings, labels, landmarks, and group relationships.</p></article>
+        <article><strong>Error recovery</strong><p>Identify the specific problem in text, associate it with the control, and explain how to correct it when known.</p></article>
+        <article><strong>Motion</strong><p>Honor reduced-motion preferences and avoid unnecessary animated movement.</p></article>
+        <article><strong>Reflow</strong><p>Layouts must remain usable at narrow widths and high zoom without hiding essential content.</p></article>
+        <article><strong>Color</strong><p>Contrast must be validated, and meaning must never depend on color alone.</p></article>
+      </div>
+
+      <div class="focus-demo">
+        <p>Keyboard focus example</p>
+        <button type="button">Tab to this button</button>
+        <a href="#content">Then to this link</a>
+      </div>
+    </section>
+
+    <section class="system-section" id="content">
+      <div class="section-heading">
+        <p class="eyebrow">Standard</p>
+        <h2>Content & voice</h2>
+        <p>Cedarline copy should be direct, calm, human, and precise—especially when the user may be stressed.</p>
+      </div>
+
+      <div class="content-examples">
+        <article class="good-copy"><span>Preferred</span><p><strong>What happened?</strong><br>Choose the option that fits best. You can clarify details later.</p></article>
+        <article class="bad-copy"><span>Avoid</span><p><strong>Select loss classification.</strong><br>Please choose the applicable loss type from the choices below.</p></article>
+      </div>
+
+      <div class="content-rules">
+        <p><strong>Use verbs for actions.</strong> “Upload documents,” not “Document upload.”</p>
+        <p><strong>State what can wait.</strong> “You can add photos later.”</p>
+        <p><strong>Avoid false certainty.</strong> “Report received” is not “Coverage approved.”</p>
+        <p><strong>Translate before defining.</strong> Plain language should lead users toward formal insurance terminology.</p>
+      </div>
+    </section>
+
+    <section class="system-section" id="responsive">
+      <div class="section-heading">
+        <p class="eyebrow">Standard</p>
+        <h2>Responsive behavior</h2>
+        <p>Responsive design changes layout and density without changing the underlying task model.</p>
+      </div>
+
+      <div class="breakpoint-grid">
+        <article><strong>Compact</strong><span>&lt; 640px</span><p>Single-column tasks, stacked choices, large touch targets.</p></article>
+        <article><strong>Medium</strong><span>640–960px</span><p>Flexible grids, simplified navigation, detail regions may stack.</p></article>
+        <article><strong>Wide</strong><span>&gt; 960px</span><p>Contextual side panels, multi-column foundations, enterprise density where appropriate.</p></article>
+      </div>
+    </section>
+
+    <section class="system-section" id="governance">
+      <div class="section-heading">
+        <p class="eyebrow">Standard</p>
+        <h2>Governance & handoff</h2>
+        <p>A design system only works if teams know when to reuse, extend, or challenge it.</p>
+      </div>
+
+      <div class="governance-grid">
+        <article><strong>Reuse first</strong><p>Use an existing component when the user need and interaction model already match.</p></article>
+        <article><strong>Extend with evidence</strong><p>Add variants when a recurring, documented need cannot be met by an existing pattern.</p></article>
+        <article><strong>Accessibility is a gate</strong><p>A component is not complete until keyboard, semantics, focus, contrast, error, motion, and reflow behavior are documented.</p></article>
+        <article><strong>Document decisions</strong><p>Component docs should include purpose, when to use, when not to use, anatomy, states, accessibility, and implementation notes.</p></article>
+      </div>
+
+      <div class="closing-panel">
+        <h3>From portfolio project to production system</h3>
+        <p>A real enterprise design system would add product-team research, contribution workflows, versioning, coded packages, design-tool libraries, analytics, accessibility audits, and named governance owners.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<dialog id="confirmationDialog" class="cds-dialog" aria-labelledby="dialogTitle">
+  <form method="dialog">
+    <div class="dialog-icon" aria-hidden="true">✓</div>
+    <h2 id="dialogTitle">Mark this action complete?</h2>
+    <p>This example shows focus containment, a clear decision, and an explicit cancel path.</p>
+    <div class="dialog-actions">
+      <button class="cds-button secondary" value="cancel">Cancel</button>
+      <button class="cds-button primary" value="confirm">Mark complete</button>
+    </div>
+  </form>
+</dialog>
+
+<footer>
+  <strong>Cedarline Mutual is fictional.</strong>
+  <span>This design system is a UX portfolio concept.</span>
+</footer>
+</body>
+</html>
